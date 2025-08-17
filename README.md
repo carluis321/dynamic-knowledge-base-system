@@ -1,4 +1,4 @@
- # Dynamic Knowledge Base API (Boilerplate)
+ # Dynamic Knowledge Base API
 
 Initial Node.js + TypeScript project for an API.
 
