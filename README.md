@@ -6,6 +6,10 @@ Requirements:
 - Node.js LTS (>=18)
 - pnpm
 
+## TypeScript
+
+- Version: ^5.4.2 (see `devDependencies.typescript` in `package.json`)
+
 ## Package manager
 
 - This project uses pnpm as the package manager.
@@ -34,7 +38,6 @@ Structure:
 ## Database
 
 - This project uses in-memory data structures for storage during runtime (no external DB).
-- Data resets on each process restart. Suitable for development/testing, not for production.
 
 ## Postman Collection
 
