@@ -337,14 +337,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/api/topics/a1b2c3d4-5e6f-4a7b-9c8d-0e1f2a3b4c5d",
+							"raw": "{{baseUrl}}/api/topics/b2c3d4e5-6f70-4b8c-8d9e-1f2a3b4c5d6e",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"api",
 								"topics",
-								"a1b2c3d4-5e6f-4a7b-9c8d-0e1f2a3b4c5d"
+								"b2c3d4e5-6f70-4b8c-8d9e-1f2a3b4c5d6e"
 							]
 						}
 					},
@@ -509,6 +509,16 @@
 				{
 					"name": "Find Shortest Path Between Topics",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authToken}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -518,7 +528,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"startTopicId\": \"a1b2c3d4-5e6f-4a7b-9c8d-0e1f2a3b4c5d\",\n  \"endTopicId\": \"e5f6a7b8-92a3-4ebf-9a01-4c5d6e7f8091\"\n}"
+							"raw": "{\n  \"startTopicId\": \"e5f6a7b8-92a3-4ebf-9a01-4c5d6e7f8091\",\n  \"endTopicId\": \"b7c8d9e0-1a2b-4c3d-8e9f-0a1b2c3d4e5f\"\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/topics/shortest-path",
