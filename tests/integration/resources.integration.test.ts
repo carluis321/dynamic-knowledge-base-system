@@ -16,7 +16,7 @@ jest.mock('../../src/services/resources/resource_storage', () => ({
 }));
 
 // Mock JWT for testing
-const JWT_SECRET = 'test-secret-key';
+const JWT_SECRET = 'your-secret-key';
 process.env.JWT_SECRET = JWT_SECRET;
 
 const createTestApp = () => {
@@ -35,7 +35,7 @@ describe('Resources Integration Tests', () => {
   // Helper function to generate JWT tokens for testing
   const generateToken = (role: UserRole, userId = 'test-user-id', email = 'test@example.com') => {
     return jwt.sign(
-      { id: userId, email, scope: role },
+      { id: userId, email, role },
       JWT_SECRET,
       { expiresIn: '1h' }
     );
@@ -192,7 +192,7 @@ describe('Resources Integration Tests', () => {
         .send(validResource)
         .expect(403);
 
-      expect(response.body.message).toBe('Insufficient permissions');
+      expect(response.body.message).toBe('Access denied. Required roles: Admin, Editor. Your role: Viewer');
     });
 
     it('should return 401 for unauthenticated request', async () => {
@@ -296,7 +296,7 @@ describe('Resources Integration Tests', () => {
         .send(updatedData)
         .expect(403);
 
-      expect(response.body.message).toBe('Insufficient permissions');
+      expect(response.body.message).toBe('Access denied. Required roles: Admin, Editor. Your role: Viewer');
     });
 
     it('should return 401 for unauthenticated request', async () => {
@@ -348,7 +348,7 @@ describe('Resources Integration Tests', () => {
         .set('Authorization', `Bearer ${editorToken}`)
         .expect(403);
 
-      expect(response.body.message).toBe('Insufficient permissions');
+      expect(response.body.message).toBe('Access denied. Required roles: Admin. Your role: Editor');
     });
 
     it('should return 403 for Viewer role', async () => {
@@ -357,7 +357,7 @@ describe('Resources Integration Tests', () => {
         .set('Authorization', `Bearer ${userToken}`)
         .expect(403);
 
-      expect(response.body.message).toBe('Insufficient permissions');
+      expect(response.body.message).toBe('Access denied. Required roles: Admin. Your role: Viewer');
     });
 
     it('should return 401 for unauthenticated request', async () => {

@@ -1,7 +1,13 @@
 import request from 'supertest';
 import express from 'express';
+import jwt from 'jsonwebtoken';
 import routes from '../../src/routes';
 import { errorHandler, notFoundHandler } from '../../src/middlewares/errorHandler';
+import { UserRole } from '../../src/core/types/user';
+
+// Mock JWT for testing
+const JWT_SECRET = 'your-secret-key';
+process.env.JWT_SECRET = JWT_SECRET;
 
 // Create test app
 const createTestApp = () => {
@@ -31,6 +37,17 @@ const createTestApp = () => {
 
 describe('App Integration Tests', () => {
   let app: express.Application;
+
+  // Helper function to generate JWT tokens for testing
+  const generateToken = (role: UserRole, userId = 'test-user-id', email = 'test@example.com') => {
+    return jwt.sign(
+      { id: userId, email, role },
+      JWT_SECRET,
+      { expiresIn: '1h' }
+    );
+  };
+
+  const adminToken = generateToken('Admin');
 
   beforeAll(() => {
     app = createTestApp();
@@ -73,6 +90,7 @@ describe('App Integration Tests', () => {
     it('should handle validation errors properly', async () => {
       const response = await request(app)
         .post('/api/resources')
+        .set('Authorization', `Bearer ${adminToken}`)
         .send({
           // Missing required fields to trigger validation error
           url: 'invalid-url',
