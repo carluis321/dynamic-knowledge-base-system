@@ -1,0 +1,335 @@
+[
+  {
+    "id": "a1b2c3d4-5e6f-4a7b-9c8d-0e1f2a3b4c5d",
+    "name": "Databases",
+    "content": "Relational and NoSQL databases, design, modeling and querying.",
+    "createdAt": "2025-08-10T09:15:00.000Z",
+    "updatedAt": "2025-08-10T09:15:00.000Z",
+    "version": 1,
+    "parentTopicId": null
+  },
+  {
+    "id": "a1b2c3d4-5e6f-4a7b-9c8d-0e1f2a3b4c5d",
+    "name": "Databases",
+    "content": "Relational and NoSQL databases, design, modeling and querying. (changed in version 2)",
+    "createdAt": "2025-08-10T09:15:00.000Z",
+    "updatedAt": "2025-08-11T09:15:00.000Z",
+    "version": 2,
+    "parentTopicId": null
+  },
+  {
+    "id": "e5f6a7b8-92a3-4ebf-9a01-4c5d6e7f8091",
+    "name": "PostgreSQL",
+    "content": "Advanced SQL, indexing, backups and performance tuning. (recreated version 1)",
+    "createdAt": "2025-08-12T11:20:00.000Z",
+    "updatedAt": "2025-08-12T11:20:00.000Z",
+    "version": 1,
+    "parentTopicId": "a1b2c3d4-5e6f-4a7b-9c8d-0e1f2a3b4c5d"
+  },
+  {
+    "id": "e5f6a7b8-92a3-4ebf-9a01-4c5d6e7f8091",
+    "name": "PostgreSQL",
+    "content": "Advanced SQL, indexing, backups and performance tuning. (recreated version 2)",
+    "createdAt": "2025-08-12T11:20:00.000Z",
+    "updatedAt": "2025-08-13T11:20:00.000Z",
+    "version": 2,
+    "parentTopicId": "a1b2c3d4-5e6f-4a7b-9c8d-0e1f2a3b4c5d"
+  },
+  {
+    "id": "e5f6a7b8-92a3-4ebf-9a01-4c5d6e7f8091",
+    "name": "PostgreSQL",
+    "content": "Advanced SQL, indexing, backups and performance tuning.",
+    "createdAt": "2025-08-12T11:20:00.000Z",
+    "updatedAt": "2025-08-14T11:20:00.000Z",
+    "version": 3,
+    "parentTopicId": "a1b2c3d4-5e6f-4a7b-9c8d-0e1f2a3b4c5d"
+  },
+  {
+    "id": "c7d8e9f0-2b3c-4d5e-9f01-1b2c3d4e5f60",
+    "name": "Backups & Replication",
+    "content": "Backup strategies, PITR, streaming replication and failover. (recreated version 1)",
+    "createdAt": "2025-08-14T08:20:00.000Z",
+    "updatedAt": "2025-08-14T08:20:00.000Z",
+    "version": 1,
+    "parentTopicId": "e5f6a7b8-92a3-4ebf-9a01-4c5d6e7f8091"
+  },
+  {
+    "id": "c7d8e9f0-2b3c-4d5e-9f01-1b2c3d4e5f60",
+    "name": "Backups & Replication",
+    "content": "Backup strategies, PITR, streaming replication and failover. (changed in version 2)",
+    "createdAt": "2025-08-14T08:20:00.000Z",
+    "updatedAt": "2025-08-15T08:20:00.000Z",
+    "version": 2,
+    "parentTopicId": "e5f6a7b8-92a3-4ebf-9a01-4c5d6e7f8091"
+  },
+  {
+    "id": "d1e2f3a4-4567-4b8c-9d0e-2345f6a7b8c9",
+    "name": "PITR",
+    "content": "Point-in-time recovery workflows and testing.",
+    "createdAt": "2025-08-14T08:50:00.000Z",
+    "updatedAt": "2025-08-14T08:50:00.000Z",
+    "version": 1,
+    "parentTopicId": "c7d8e9f0-2b3c-4d5e-9f01-1b2c3d4e5f60"
+  },
+  {
+    "id": "e3f4a5b6-5678-4c9d-0f1a-3456b7c8d9e0",
+    "name": "Recovery Scenarios",
+    "content": "Simulating failures and recovery drills.",
+    "createdAt": "2025-08-14T09:10:00.000Z",
+    "updatedAt": "2025-08-14T09:10:00.000Z",
+    "version": 1,
+    "parentTopicId": "d1e2f3a4-4567-4b8c-9d0e-2345f6a7b8c9"
+  },
+  {
+    "id": "f6a7b8c9-0ab4-4fc0-8b12-5d6e7f8091a2",
+    "name": "Indexing Strategies",
+    "content": "How indexes work, B-tree vs GIN/GIN, and when to use them.",
+    "createdAt": "2025-08-13T08:00:00.000Z",
+    "updatedAt": "2025-08-13T08:00:00.000Z",
+    "version": 1,
+    "parentTopicId": "e5f6a7b8-92a3-4ebf-9a01-4c5d6e7f8091"
+  },
+  {
+    "id": "b7c8d9e0-1a2b-4c3d-8e9f-0a1b2c3d4e5f",
+    "name": "Partitioning",
+    "content": "Table partitioning strategies and trade-offs.",
+    "createdAt": "2025-08-14T07:30:00.000Z",
+    "updatedAt": "2025-08-14T07:30:00.000Z",
+    "version": 1,
+    "parentTopicId": "f6a7b8c9-0ab4-4fc0-8b12-5d6e7f8091a2"
+  },
+  {
+    "id": "b2c3d4e5-6f70-4b8c-8d9e-1f2a3b4c5d6e",
+    "name": "DevOps",
+    "content": "Practices for CI/CD, infrastructure as code and monitoring.",
+    "createdAt": "2025-08-11T07:30:00.000Z",
+    "updatedAt": "2025-08-11T07:30:00.000Z",
+    "version": 1,
+    "parentTopicId": null
+  },
+  {
+    "id": "b2c3d4e5-6f70-4b8c-8d9e-1f2a3b4c5d6e",
+    "name": "DevOps",
+    "content": "Practices for CI/CD, infrastructure as code and monitoring. (changed in version 2)",
+    "createdAt": "2025-08-11T07:30:00.000Z",
+    "updatedAt": "2025-08-12T07:30:00.000Z",
+    "version": 2,
+    "parentTopicId": null
+  },
+  {
+    "id": "b2c3d4e5-6f70-4b8c-8d9e-1f2a3b4c5d6e",
+    "name": "DevOps",
+    "content": "Practices for CI/CD, infrastructure as code and monitoring. (changed in version 3)",
+    "createdAt": "2025-08-11T07:30:00.000Z",
+    "updatedAt": "2025-08-13T07:30:00.000Z",
+    "version": 3,
+    "parentTopicId": null
+  },
+  {
+    "id": "b2c3d4e5-6f70-4b8c-8d9e-1f2a3b4c5d6e",
+    "name": "DevOps",
+    "content": "Practices for CI/CD, infrastructure as code and monitoring. (changed in version 4)",
+    "createdAt": "2025-08-11T07:30:00.000Z",
+    "updatedAt": "2025-08-14T07:30:00.000Z",
+    "version": 4,
+    "parentTopicId": null
+  },
+  {
+    "id": "07b8c9d0-ab15-4011-9c23-6e7f8091a2b3",
+    "name": "CI/CD Pipelines",
+    "content": "Designing pipelines, testing stages, and artifact management. (recreated version 1)",
+    "createdAt": "2025-08-13T13:45:00.000Z",
+    "updatedAt": "2025-08-13T13:45:00.000Z",
+    "version": 1,
+    "parentTopicId": "b2c3d4e5-6f70-4b8c-8d9e-1f2a3b4c5d6e"
+  },
+  {
+    "id": "07b8c9d0-ab15-4011-9c23-6e7f8091a2b3",
+    "name": "CI/CD Pipelines",
+    "content": "Designing pipelines, testing stages, and artifact management.",
+    "createdAt": "2025-08-13T13:45:00.000Z",
+    "updatedAt": "2025-08-14T13:45:00.000Z",
+    "version": 2,
+    "parentTopicId": "b2c3d4e5-6f70-4b8c-8d9e-1f2a3b4c5d6e"
+  },
+  {
+    "id": "c4d5e6f7-6789-4a0b-9c1d-4567e8f90123",
+    "name": "GitHub Actions",
+    "content": "Reusable workflows and actions marketplace.",
+    "createdAt": "2025-08-13T14:15:00.000Z",
+    "updatedAt": "2025-08-13T14:15:00.000Z",
+    "version": 1,
+    "parentTopicId": "07b8c9d0-ab15-4011-9c23-6e7f8091a2b3"
+  },
+  {
+    "id": "d5e6f7a8-7890-4b1c-9d2e-5678f9012345",
+    "name": "Reusable Workflows",
+    "content": "Patterns for composing reusable CI workflows.",
+    "createdAt": "2025-08-13T14:45:00.000Z",
+    "updatedAt": "2025-08-13T14:45:00.000Z",
+    "version": 1,
+    "parentTopicId": "c4d5e6f7-6789-4a0b-9c1d-4567e8f90123"
+  },
+  {
+    "id": "e6f7a8b9-8901-4c2d-9e3f-678901234567",
+    "name": "Advanced Patterns",
+    "content": "Matrix builds, dynamic workflows, and multi-repo strategies.",
+    "createdAt": "2025-08-13T15:10:00.000Z",
+    "updatedAt": "2025-08-13T15:10:00.000Z",
+    "version": 1,
+    "parentTopicId": "d5e6f7a8-7890-4b1c-9d2e-5678f9012345"
+  },
+  {
+    "id": "29d0e1f2-cd37-4333-9e45-8091a2b3c4d5",
+    "name": "Kubernetes",
+    "content": "Cluster concepts, deployments, services, and RBAC.",
+    "createdAt": "2025-08-14T10:30:00.000Z",
+    "updatedAt": "2025-08-14T10:30:00.000Z",
+    "version": 1,
+    "parentTopicId": "b2c3d4e5-6f70-4b8c-8d9e-1f2a3b4c5d6e"
+  },
+  {
+    "id": "3a4b5c6d-7e8f-4a9b-9c0d-2e3f4a5b6c7d",
+    "name": "Helm",
+    "content": "Package manager for Kubernetes; charts and templating.",
+    "createdAt": "2025-08-14T11:15:00.000Z",
+    "updatedAt": "2025-08-14T11:15:00.000Z",
+    "version": 1,
+    "parentTopicId": "29d0e1f2-cd37-4333-9e45-8091a2b3c4d5"
+  },
+  {
+    "id": "7f8e9d0c-9012-4e3f-9a4b-6789c0d1e2f3",
+    "name": "Charts Best Practices",
+    "content": "Structuring charts and managing values across environments.",
+    "createdAt": "2025-08-14T11:45:00.000Z",
+    "updatedAt": "2025-08-14T11:45:00.000Z",
+    "version": 1,
+    "parentTopicId": "3a4b5c6d-7e8f-4a9b-9c0d-2e3f4a5b6c7d"
+  },
+  {
+    "id": "9f1b2c3d-4a5e-4f6a-8b7c-1d2e3f4a5b6c",
+    "name": "Programming",
+    "content": "Overview of programming concepts, paradigms and best practices.",
+    "createdAt": "2025-08-10T09:00:00.000Z",
+    "updatedAt": "2025-08-10T09:00:00.000Z",
+    "version": 1,
+    "parentTopicId": null
+  },
+  {
+    "id": "9f1b2c3d-4a5e-4f6a-8b7c-1d2e3f4a5b6c",
+    "name": "Programming",
+    "content": "Overview of programming concepts, paradigms and best practices. (changed in version 2)",
+    "createdAt": "2025-08-10T09:00:00.000Z",
+    "updatedAt": "2025-08-11T09:00:00.000Z",
+    "version": 2,
+    "parentTopicId": null
+  },
+  {
+    "id": "9f1b2c3d-4a5e-4f6a-8b7c-1d2e3f4a5b6c",
+    "name": "Programming",
+    "content": "Overview of programming concepts, paradigms and best practices. (changed in version 3)",
+    "createdAt": "2025-08-10T09:00:00.000Z",
+    "updatedAt": "2025-08-12T09:00:00.000Z",
+    "version": 3,
+    "parentTopicId": null
+  },
+  {
+    "id": "c3d4e5f6-7081-4c9d-9eaf-2a3b4c5d6e7f",
+    "name": "JavaScript",
+    "content": "Language fundamentals, event loop, async patterns, and ecosystem. (recreated version 1)",
+    "createdAt": "2025-08-11T10:00:00.000Z",
+    "updatedAt": "2025-08-11T10:00:00.000Z",
+    "version": 1,
+    "parentTopicId": "9f1b2c3d-4a5e-4f6a-8b7c-1d2e3f4a5b6c"
+  },
+  {
+    "id": "c3d4e5f6-7081-4c9d-9eaf-2a3b4c5d6e7f",
+    "name": "JavaScript",
+    "content": "Language fundamentals, event loop, async patterns, and ecosystem. (recreated version 2)",
+    "createdAt": "2025-08-11T10:00:00.000Z",
+    "updatedAt": "2025-08-12T10:00:00.000Z",
+    "version": 2,
+    "parentTopicId": "9f1b2c3d-4a5e-4f6a-8b7c-1d2e3f4a5b6c"
+  },
+  {
+    "id": "c3d4e5f6-7081-4c9d-9eaf-2a3b4c5d6e7f",
+    "name": "JavaScript",
+    "content": "Language fundamentals, event loop, async patterns, and ecosystem. (recreated version 3)",
+    "createdAt": "2025-08-11T10:00:00.000Z",
+    "updatedAt": "2025-08-13T10:00:00.000Z",
+    "version": 3,
+    "parentTopicId": "9f1b2c3d-4a5e-4f6a-8b7c-1d2e3f4a5b6c"
+  },
+  {
+    "id": "c3d4e5f6-7081-4c9d-9eaf-2a3b4c5d6e7f",
+    "name": "JavaScript",
+    "content": "Language fundamentals, event loop, async patterns, and ecosystem. (recreated version 4)",
+    "createdAt": "2025-08-11T10:00:00.000Z",
+    "updatedAt": "2025-08-14T10:00:00.000Z",
+    "version": 4,
+    "parentTopicId": "9f1b2c3d-4a5e-4f6a-8b7c-1d2e3f4a5b6c"
+  },
+  {
+    "id": "c3d4e5f6-7081-4c9d-9eaf-2a3b4c5d6e7f",
+    "name": "JavaScript",
+    "content": "Language fundamentals, event loop, async patterns, and ecosystem. (changed in version 5)",
+    "createdAt": "2025-08-11T10:00:00.000Z",
+    "updatedAt": "2025-08-15T10:00:00.000Z",
+    "version": 5,
+    "parentTopicId": "9f1b2c3d-4a5e-4f6a-8b7c-1d2e3f4a5b6c"
+  },
+  {
+    "id": "c8f1d2e3-4a5b-4890-9b1c-2d3e4f5a6b7c",
+    "name": "Frameworks",
+    "content": "Web and server frameworks built on JavaScript/TypeScript.",
+    "createdAt": "2025-08-12T11:00:00.000Z",
+    "updatedAt": "2025-08-12T11:00:00.000Z",
+    "version": 1,
+    "parentTopicId": "c3d4e5f6-7081-4c9d-9eaf-2a3b4c5d6e7f"
+  },
+  {
+    "id": "f1e2d3c4-b5a6-4d7e-8f90-1a2b3c4d5e6f",
+    "name": "React",
+    "content": "Component model, hooks, and ecosystem overview. (recreated version 1)",
+    "createdAt": "2025-08-12T12:00:00.000Z",
+    "updatedAt": "2025-08-12T12:00:00.000Z",
+    "version": 1,
+    "parentTopicId": "c8f1d2e3-4a5b-4890-9b1c-2d3e4f5a6b7c"
+  },
+  {
+    "id": "f1e2d3c4-b5a6-4d7e-8f90-1a2b3c4d5e6f",
+    "name": "React",
+    "content": "Component model, hooks, and ecosystem overview.",
+    "createdAt": "2025-08-12T12:00:00.000Z",
+    "updatedAt": "2025-08-13T12:00:00.000Z",
+    "version": 2,
+    "parentTopicId": "c8f1d2e3-4a5b-4890-9b1c-2d3e4f5a6b7c"
+  },
+  {
+    "id": "e1f2d3c4-b5a6-4d7e-8f90-1b2c3d4e5f60",
+    "name": "Next.js",
+    "content": "Server-side rendering, routing, and full-stack patterns.",
+    "createdAt": "2025-08-13T09:00:00.000Z",
+    "updatedAt": "2025-08-13T09:00:00.000Z",
+    "version": 1,
+    "parentTopicId": "f1e2d3c4-b5a6-4d7e-8f90-1a2b3c4d5e6f"
+  },
+  {
+    "id": "d9e0f1a2-2345-4b6c-9d0e-2f3a4b5c6d7e",
+    "name": "Next.js Performance",
+    "content": "Advanced performance tuning, image optimization, and caching.",
+    "createdAt": "2025-08-14T10:00:00.000Z",
+    "updatedAt": "2025-08-14T10:00:00.000Z",
+    "version": 1,
+    "parentTopicId": "e1f2d3c4-b5a6-4d7e-8f90-1b2c3d4e5f60"
+  },
+  {
+    "id": "e2f3a4b5-c6d7-4e8f-9a01-3b4c5d6e7f80",
+    "name": "Image Optimization",
+    "content": "Techniques for responsive images and caching strategies.",
+    "createdAt": "2025-08-14T10:30:00.000Z",
+    "updatedAt": "2025-08-14T10:30:00.000Z",
+    "version": 1,
+    "parentTopicId": "d9e0f1a2-2345-4b6c-9d0e-2f3a4b5c6d7e"
+  }
+]
